@@ -1,0 +1,470 @@
+/* General Reset */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DynaPuff", serif;
+  line-height: 1.9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #000000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+  font-family: "DynaPuff", serif;
+}
+
+header h1 {
+  font-size: 2.5em;
+
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  color: white;
+  border-radius: 8px;
+  margin-left:2px;
+  margin-top: 2px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+  font-family: "DynaPuff", serif;
+}
+
+nav ul li a:hover {
+  background: #b3b9bf;
+  color: #333;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #4a61e1, transparent) #c62752;
+  
+}
+
+/* Main Content */
+
+main section {
+  margin-bottom: 30px;
+}
+
+main h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: "DynaPuff", serif;
+  text-align: center;
+  ;
+}
+
+main ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: white;
+  margin-top: -17px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  /* nav ul {
+    flex-direction: column;
+  } */
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 3px;
+  }
+
+  main h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  /* nav ul {
+    flex-direction: column;
+    padding: 0;
+  } */
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 0.9em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  main h2 {
+    font-size: 1.3em;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+/* logo */
+#logo{
+  width: 60px;  /* Set the width of the logo */
+  height: auto;  /* Automatically adjusts the height to maintain aspect ratio */
+  display: block;  /* Treat the image as a block element */
+  margin-left: 0;  /* Ensure no left margin */
+  border-radius:100px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#log{
+  width: 35px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  margin: 20px;
+  max-width: 100%;
+}
+
+.skill-card {
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color:#f4f4f4
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-card:hover {
+  /* transform: scale(1.2);
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2); */
+  transform: translateY(-15px);
+    box-shadow: 0px 15px 20px -5px rgb(74, 97, 225,0.5), 0px 10px 20px -5px rgba(198, 39, 82);
+}
+
+
+/* about */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Full screen height */
+  padding: 1px;
+  color: #000000;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  max-width: 100%; /* Ensures content doesn't stretch too wide */
+  gap: 5rem; /* Adds space between the image and text */
+}
+
+.about-photo {
+  width: 230px; /* Image size */
+  height: 230px;
+  border-radius: 17%; /* Rounded corners */
+  border: 5px solid #ff7700; /* Optional: White border */
+  object-fit: cover; /* Maintains image aspect ratio */
+}
+
+.about-text {
+  text-align: left; /* Aligns text to the left */
+}
+
+.about-text h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  max-width: 600px; /* Keeps text width manageable */
+}
+
+.about-text b {
+  color: #ff7700; /* Highlights your name in a golden color */
+  font-size: 2.5rem;
+}
+
+#fst{
+  font-size:2.5rem;
+}
+
+
+
+/* contect */
+
+form {
+  background-color: rgb(21, 20, 20);
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+  text-align: left;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #f0eaea;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  width: 500px;
+  height: 600px;
+  float: right;
+  margin-bottom: 5rem;
+  margin-left: 20px;
+  padding-bottom: 2.5rem;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #282828;
+  color: #ebabab;
+  font-size: 1rem;
+}
+
+textarea {
+  height:90px;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fa8b30;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.canvas .point {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.canvas .line {
+  position: absolute;
+}
+
+#contect{
+  display: flex;
+  justify-content: flex-end;
+}
+form label{
+  color: #f4f4f4;
+}
+
+.contact-form h1{
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+footer {
+  clear: both;
+}
+
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-top: 34rem;
+  padding-bottom: -10rem;
+}
+
+.social-media a {
+  margin-bottom: 10px;
+}
+
+.social-media img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+}
+
+
+
+-----
+/* project css */
+/* Base styles for the Projects section */
+#projects {
+  padding: 50px 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+  color: #333;
+}
+
+/* Title for the Projects section */
+#projects h2 {
+  font-family: 'DynaPuff', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* Container holding all project cards */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual project card */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Project thumbnail */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Project info container */
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Project title */
+.project-info h3 {
+  font-family: 'DynaPuff', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Project description */
+.project-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Hover effect on project cards */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 20px -5px rgb(74, 97, 225,0.5), 0px 10px 20px -5px rgb(0, 0, 0);
+}
+
+/* Styling the link inside the project card */
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove underline from the link */
+.project-card a:hover h3,
+.project-card a:hover p {
+  color: #101213; /* Optional: Change the color on hover */
+}
