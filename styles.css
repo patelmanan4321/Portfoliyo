@@ -262,20 +262,52 @@ textarea {
   height: 90px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
+/* From Uiverse.io by Navarog21 */ 
+#submit {
+  width: 10em;
+  position: relative;
+  height: 2.2em;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
   color: white;
-  font-size: 1rem;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #fa8b30;
+#submit::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 35%;
+  background-color: #151414;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+#submit::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 35%;
+  background-color: #151414;
+  transition: 0.5s;
+}
+
+#submit:hover::before, #submit:hover::after {
+  transform: scale(0)
+}
+
+#submit:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
 }
 
 /* Social Media */
@@ -350,4 +382,136 @@ button:hover {
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px rgba(74, 97, 225, 0.5);
+}
+
+
+
+
+
+/* From Uiverse.io by Praashoo7 */ 
+.con {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-right: 27%;
+  margin-top: 9%;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.cardg1 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: rgb(3, 3, 3);
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.cardg2 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.cardg3 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.cardg4 {
+  width: 120px;
+  height: 120px;
+  outline: none;
+  border: none;
+  background: rgb(0, 0, 0);
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.cardg1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.cardg1:hover .instagram {
+  fill: white;
+}
+
+.cardg2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.cardg2:hover .twitter {
+  fill: white;
+}
+
+.cardg3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.cardg3:hover .github {
+  fill: white;
+}
+
+.cardg4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.cardg4:hover .discord {
+  fill: white;
 }
