@@ -523,7 +523,7 @@ textarea {
 
 
 /* From Uiverse.io by e-coders */ 
-button {
+#resume {
   position: relative;
   overflow: hidden;
   border: 1px solid #333;
@@ -541,13 +541,13 @@ button {
   font-family: "DynaPuff", serif;
  }
  
- button span:first-child {
+ #resume span:first-child {
   position: relative;
   transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
   z-index: 10;
  }
  
- button span:last-child {
+ #resume span:last-child {
   color: white;
   display: block;
   position: absolute;
@@ -562,7 +562,7 @@ button {
   line-height: 13px;
  }
  
- button:after {
+ #resume:after {
   content: "";
   position: absolute;
   bottom: -50%;
@@ -576,12 +576,12 @@ button {
   z-index: 50;
  }
  
- button:hover:after {
+ #resume:hover:after {
   transform-origin: bottom center;
   transform: skewY(9.3deg) scaleY(2);
  }
  
- button:hover span:last-child {
+ #resume:hover span:last-child {
   transform: translateX(-50%) translateY(-50%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
