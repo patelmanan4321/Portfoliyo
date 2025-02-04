@@ -1,5 +1,11 @@
+<h1 align="center">Hi 👋, I'm Patel Manan</h1>
+<h3 align="center">A passionate frontend developer from India</h3>
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=patelmanan4321&label=Profile%20views&color=0e75b6&style=flat" alt="patelmanan4321" /> </p>
+
+
 # 💫 About Me:
-🔭 I’m currently working on coding projects and learning new technologies.  <br>👯 I’m looking to collaborate on open-source and innovative tech solutions.  <br>🤝 I’m looking for help with advanced programming concepts.  <br>🌱 I’m currently learning web development and machine learning.  <br>💬 Ask me about coding and tech trends.  <br>⚡ Fun fact: I love problem-solving and gaming!
+🔭 I’m currently working on coding projects and learning new technologies.  <br>👯 I’m looking to collaborate on open-source and innovative tech solutions.  <br>🤝 I’m looking for help with advanced programming concepts.  <br>🌱 I’m currently learning web development and machine learning.  <br>💬 Ask me about coding and tech trends.  <br>⚡ Fun fact: I love problem-solving and gaming!. <br>👨‍💻 All of my projects are available at [https://mananportfliyo.netlify.app/](https://mananportfliyo.netlify.app/) 
 
 
 ## 🌐 Socials:
